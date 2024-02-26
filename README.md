@@ -8,9 +8,9 @@ Nod-o-meter is a high-tech nod tracking app that uses your webcam to answer ques
 [![Open Issues](https://img.shields.io/github/issues-raw/your-username/your-repo?color=orange&label=Open%20Issues)](https://github.com/Saharsh1005/human_nod/issues)
 
 ![Web App Image](./docs/web_app_image.png)
-## Demo
+## Demo Video Link
 
-[![Watch the video](https://img.youtube.com/vi/C4irD_aP7wY/0.jpg)](https://www.youtube.com/watch?v=C4irD_aP7wY)
+[Watch the video](https://www.youtube.com/watch?v=C4irD_aP7wY)
 
 ## Usage
 
