@@ -42,7 +42,7 @@ Nod-o-meter is a high-tech nod tracking app that uses your webcam to answer ques
 Please report any bugs you find to the [issues page](https://github.com/Saharsh1005/human_nod/issues). We welcome open source contributions!
 
 ## Contributor
-[<img src="https://github.com/saharsh1005.png" width="100px;"/><br /><sub><b>Saharsh</b></sub>](https://github.com/your-username)
+[<img src="https://github.com/saharsh1005.png" width="100px;"/><br /><sub><b>Saharsh</b></sub>](https://github.com/saharsh1005)
 
 ## Repo Link
 Github repo link: https://github.com/Saharsh1005/nod-o-meter
