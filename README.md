@@ -43,3 +43,4 @@ Please report any bugs you find to the [issues page](https://github.com/Saharsh1
 
 ## Contributor
 [<img src="https://github.com/saharsh1005.png" width="100px;"/><br /><sub><b>Saharsh</b></sub>](https://github.com/your-username)
+Github repo link: https://github.com/Saharsh1005/nod-o-meter
