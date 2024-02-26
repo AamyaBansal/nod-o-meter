@@ -2,6 +2,7 @@
 ![Cover](./docs/app_cover.png)
 
 Nod-o-meter is a high-tech nod tracking app that uses your webcam to answer questions by nodding your head. It's not your average nodding game; it's designed to uncover the deepest secrets of your nods! Are you ready to nod your way to enlightenment? Let the nodding begin!
+
 [![Version](https://img.shields.io/badge/Version-1.0.0-blue.svg)](https://your-repo/releases/tag/your-version)
 [![Last Updated](https://img.shields.io/badge/Last%20Updated-February%2025%2C%202024-green.svg)](https://your-repo/commits/master)
 [![Open Issues](https://img.shields.io/github/issues-raw/your-username/your-repo?color=orange&label=Open%20Issues)](https://github.com/Saharsh1005/human_nod/issues)
