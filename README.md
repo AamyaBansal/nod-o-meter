@@ -15,7 +15,7 @@ Nod-o-meter is a high-tech nod tracking app that uses your webcam to answer ques
 ## Usage
 
 1. Clone this repo.
-2. Create conda env with `python 3.8.18` and install requirements `pip install -r requirements.txt`
+2. Create conda env with `conda create --name test_nodometer python=3.8.18`, `conda activate test_nodometer` install requirements `pip install -r requirements.txt`
 3. Run app `python web/app.py`
 4. Click `Start` to begin logging, then click on `Play` to start playing *nod-o-meter*.
 5. Nod your head vertically to answer "yes" and shake your head to answer "no".
