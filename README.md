@@ -10,7 +10,7 @@ Nod-o-meter is a high-tech nod tracking app that uses your webcam to answer ques
 ![Web App Image](./docs/web_app_image.png)
 ## Demo Video Link
 
-[Watch the video](https://www.youtube.com/watch?v=C4irD_aP7wY)
+[Watch the video](https://youtu.be/3vlDae7At5Q)
 
 ## Usage
 
