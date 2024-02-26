@@ -4,14 +4,18 @@ import sys
 import os
 sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), '..')))
 from vision.utils import find_face, optical_flow_keypoint, current_frame_response, get_coords, axes_movements, define_gesture
+from logs.logger import log_interaction
 
-def track_face_movement(camera,face_cascade = cv2.CascadeClassifier(cv2.data.haarcascades + 'haarcascade_frontalface_default.xml')
+def track_face_movement(camera,current_question,socketio,face_cascade = cv2.CascadeClassifier(cv2.data.haarcascades + 'haarcascade_frontalface_default.xml')
 ):
     face_found = False
     x_movement = 0
     y_movement = 0
     FRAME_RATE = 30
+    FINAL_THRESHOLD = 10
     track_cur_gesture = FRAME_RATE
+    # gesture_sequence = []
+    flag_logged_first_response = False
     print('Running track face')
     while True:
         ret, frame = camera.read()
@@ -45,8 +49,10 @@ def track_face_movement(camera,face_cascade = cv2.CascadeClassifier(cv2.data.haa
         y_movement += shift_y
 
         gesture  = define_gesture(x_movement, y_movement)
-        print(f'prev: {coord_prev} vs cur: {coord_cur}')
-        print(f'x_movement {x_movement}, y movement {y_movement}, gesture: {gesture}')
+
+        # DEBUG
+        # print(f'prev: {coord_prev} vs cur: {coord_cur}')
+        # print(f'x_movement {x_movement}, y movement {y_movement}, gesture: {gesture}')
 
         if gesture and (track_cur_gesture > 0):
             response = current_frame_response(coord_prev, coord_cur, face_rect, gesture, frame = frame_color, flag='correct')
@@ -58,10 +64,11 @@ def track_face_movement(camera,face_cascade = cv2.CascadeClassifier(cv2.data.haa
             x_movement = 0
             y_movement = 0
             track_cur_gesture = FRAME_RATE
+            flag_logged_first_response = False
+        
+        if (not flag_logged_first_response) and gesture != 'Try again': # FixMe - logic 
+            log_interaction(current_question, gesture,socketio)
+            flag_logged_first_response = True
 
         prev_face_coord = cur_face_coord
         old_gray = frame_gray.copy()
-
-        
-
-    # cap.release()
