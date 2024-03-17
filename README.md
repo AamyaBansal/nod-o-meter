@@ -31,6 +31,9 @@ Nod-o-meter is a high-tech nod tracking app that uses your webcam to answer ques
 -  [x] **Documentation** ReadMe with added Issues(features enhancements, bugs etc) + demo video
 -  [ ] **Dockerize** the app for easier deployment (*wip - rectify link to webcam from container*)
 
+## Application Components
+![System_description](./docs/system_breakdown.png)
+
 ## Further Enhancements
 
 * [ ] Improve the computer vision algorithm for more accurate nod tracking (TBD)
