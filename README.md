@@ -49,3 +49,6 @@ Please report any bugs you find to the [issues page](https://github.com/Saharsh1
 
 ## Repo Link
 Github repo link: https://github.com/Saharsh1005/nod-o-meter
+
+## Reference 
+[Git-gist](https://gist.github.com/smeschke/e59a9f5a40f0b0ed73305d34695d916b)
