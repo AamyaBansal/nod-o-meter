@@ -15,7 +15,7 @@ app            = Flask(__name__)
 app.config['SECRET_KEY'] = 'secret!'
 socketio = SocketIO(app)
 
-camera         = cv2.VideoCapture(0)
+camera = cv2.VideoCapture(0)
 # camera = cv2.VideoCapture("D:/Study/UIUC/Projects/head_nod_recognition/src/data/webcam_input.mp4")
 current_question = None
 
